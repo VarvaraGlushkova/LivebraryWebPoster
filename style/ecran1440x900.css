@@ -1,0 +1,239 @@
+/* Основные стили */
+
+body {
+ overflow-x: hidden;
+}
+
+  .container {
+    /* position: relative;
+    left: 243px;
+    top: 48px; */
+    width: 1010px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* box-sizing: border-box; */
+  }
+  .letter {
+    display: inline-block;
+    top: 17px;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 200px;
+    color: #2B9D8E;
+
+  }
+
+
+  .polkaheading {
+    /* position: absolute; */
+    width: 1143px;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: -34px;
+    /* left: 148px;
+    top: 266px; */
+    background: #E66F51;
+  }
+
+/* ПЕРВАЯ ПОЛКА */
+
+
+  .sectionfirst {
+    margin-top: 65px;
+  }
+  .anim1 {
+    /* background: grey; */
+    width: 1440px;
+    height: 276px;
+  }
+  .Line1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 276px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    position: absolute;
+    z-index: -1;
+    width: 2580px;
+    height: 276px;
+    background: #264653;
+    animation: line1 5s linear infinite;
+    animation-delay: 2.1s;
+  }
+  .bunny1 {
+    position: absolute;
+    padding-top: 37px;
+    animation: bunny1 5s linear infinite;
+  }
+  .polka1 {
+    /* position: absolute; */
+    width: 1440px;
+    height: 45px;
+    background: #E66F51;
+  }
+
+
+/* ВТОРАЯ ПОЛКА */
+
+  .rsect2_1 {
+    margin-left: 831px;
+
+  }
+  .doggie1 {
+    position: absolute;
+    z-index: -1;
+    animation: doggie1 5s linear infinite;
+  }
+  .bookssect2 > img {
+    /* как сделать их без этих микропробелов? */
+    /* display: flex;
+    align-items: flex-end;
+    display: inline-block; */
+  }
+
+
+/* ТРЕТЬЯ ПОЛКА */
+  /* .anim3 {
+    position: relative;
+  } */
+  .bookssect3 {
+    display: inline-block;
+  }
+  .bunny2 {
+    margin-left: 70px;
+    margin-right: 74px;
+  }
+  .bunny2ears {
+    left: 550px;
+    position: absolute;
+    z-index: -1;
+  }
+  .appear {
+    display: none;
+  }
+  .appear:hover {
+    display: block;
+    animation: bunny2ear 4s ease infinite;
+  }
+
+
+  .B1, .B3, .B4 {
+    position: relative;
+  }
+  .TextB1 {
+    position: absolute;
+    left: -114px;
+    top: 1692px;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 47px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    color: #5EA0BB;
+  }
+  .TextB3 {
+    position: absolute;
+    left: 305px;
+    top: 1787px;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFEDC2;
+    transform: rotate(-90deg);
+  }
+  .TextB4 {
+    position: absolute;
+    left: 917px;
+    top: 1725px;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #439E93;
+    transform: rotate(-90deg);
+  }
+  .reveal {
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  .reveal:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+  .section {
+    /* position: relative; */
+    display: block;
+    height: 720px;
+    width: 1440px;
+  }
+
+  .polka {
+    /* position: absolute; */
+    width: 1440px;
+    height: 45px;
+
+    background: #E66F51;
+  }
+  .section {
+    align-items: flex-end;
+  }
+  .section > div:nth-of-type(1) {
+    width: 1440px;
+    height: 675px;
+    /* background: grey; */
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .anim4 {
+    display: flex;
+  }
+  .tiles {
+    /* display: inline-block; */
+    width: 360px;
+    height: 675px;
+    background: blue;
+  }
+
+
+
+
+  /* Анимациии */
+ @keyframes line1 {
+   0% {left: -3000px;}
+   100% {left: 3000px;}
+ }
+ @keyframes bunny1 {
+   0% {left: -2978px;}
+   100% {left: 2978px;}
+ }
+
+ @keyframes doggie1 {
+   0% {right: -1800px;}
+   100% {right: 1800px;}
+ }
+
+ @keyframes bunny2ear {
+   0% {top: ; transform: scale();}
+   50% {top: ; transform: scale();}
+   100% {top: ; transform: scale();}
+ }
+
+
+
+
+
+
+  /* Адаптивы для разных экранов */

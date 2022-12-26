@@ -1,0 +1,10 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .letter {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 351px;
+    color: #2B9D8E;
+
+  }
+}
