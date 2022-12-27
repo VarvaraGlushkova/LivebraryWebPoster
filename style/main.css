@@ -1,7 +1,6 @@
 @import "reset.css";
-/* я видела подключение файлов стилей, где вместо названия папки стоит точка, почему так? */
-@import url('https://fonts.cdnfonts.com/css/mahone-sans');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap');
+/* простите за большое количество медиа импортов, просто я путаюсь когда много всего в одном файле */
 
 @import "ecran1440x900.css";
 /* @import "./ecran1920x1080.css";
@@ -14,6 +13,4 @@
 body {
   font-family: 'PT Sans Caption', sans-serif;
   background-color: #ECA369;
-  overflow-x: hidden;
-
 }
