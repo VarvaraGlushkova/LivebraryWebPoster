@@ -474,27 +474,24 @@ body {
   .bookssect82 {
     position: absolute;
     left: 1252px;
-
   }
 
   .moveright {
     animation: move-right 7s ease infinite;
   }
-  .bounce {
-    animation: bounce 7s ease infinite;
-  }
+
   .doggie4 {
     position: absolute;
     top: 38%;
     display: block;
     z-index: -2;
-    animation: doggie4 6s ease infinite;
+    animation: doggie4 8s ease infinite;
   }
-
 
   .conf1, .conf2, .conf3, .conf4, .conf5, .conf6, .conf7 {
     position: absolute;
     z-index: -3;
+    animation: confetti1 8s ease infinite;
   }
   .conf1 {
     top: 4%;
@@ -526,6 +523,58 @@ body {
   }
 
 
+  /* ФИНАЛЬНАЯ СЕКЦИЯ */
+  .footer {
+    position: relative;
+    display: flex;
+    height: 116px;
+    width: 100vw;
+    background: #E66F51;
+  }
+  .name {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+  .group {
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+  .logotip {
+    position: absolute;
+    top: 24%;
+    left: 82%;
+  }
+
+  .Textlast {
+    position: absolute;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 304px;
+    text-transform: uppercase;
+    color: #2B9D8E;
+  }
+  .Textlast span {
+    display:inline-block;
+    width: 2000px;
+    text-indent:0;
+    animation: txtmovepls 3s linear infinite}
+  .Textlast span:hover{
+    animation-play-state: paused
+  }
+  .animLAST {
+    height: 304px;
+    width: 100vw;
+  }
 
 
 
@@ -545,10 +594,19 @@ body {
     position: relative;
     display: block;
     overflow: hidden;
+    height: 261px;
+    width: 100vw;
+  }
+
+  .sectionlast {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 420px;
+    width: 100vw;
   }
 
   .polka {
-    /* position: absolute; */
     width: 100%;
     /* Прописать хейгт в адаптивах для полок */
     height: 45px;
@@ -586,10 +644,6 @@ body {
    0% {transform: translateY(0);}
    100% {transform: translateY(-80px);}
  }
-
-
-
-
 
 
 
@@ -637,6 +691,8 @@ body {
    80% {transform: translateY(6.4px);}
    90% {transform: translateY(-6.4px);}
  }
+
+
 
  @keyframes doggietiel4 {
    0% {right: 200%;}
@@ -689,7 +745,16 @@ body {
  }
 
  @keyframes confetti1 {
+   0% {opacity: 0; transform: scale(0);}
+   45% {opacity: 0; transform: scale(0);}
+   70% {opacity: 1; transform: scale(1);}
+   75% {opacity: 0;}
+   100% {opacity: 0;}
+ }
 
+ @keyframes txtmovepls {
+ 0%  { transform: translate(100%, 0); }
+ 100% { transform: translate(-100%, 0); }
  }
 
 

@@ -3,12 +3,12 @@
 /* простите за большое количество медиа импортов, просто я путаюсь когда много всего в одном файле */
 
 @import "ecran1440x900.css";
-/* @import "./ecran1920x1080.css";
-@import "./ecran1366x768.css";
-@import "./ecran1024x768.css";
-@import "./ecran768x1024.css";
-@import "./ecran414x896.css";
-@import "./ecran360x640.css"; */
+@import "ecran1920x1080.css";
+@import "ecran1366x768.css";
+@import "ecran1024x768.css";
+@import "ecran768x1024.css";
+@import "ecran414x896.css";
+@import "ecran375x640.css";
 
 body {
   font-family: 'PT Sans Caption', sans-serif;

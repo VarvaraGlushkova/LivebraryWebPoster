@@ -1,10 +1,356 @@
 @media only screen and (min-width: 1366px) and (max-width: 1439px) {
+
   .letter {
     display: inline-block;
+    top: 17px;
     font-weight: 700;
-    font-size: 200px;
-    line-height: 351px;
+    font-size: 160px;
+    line-height: 210px;
     color: #2B9D8E;
-
   }
+  .container {
+    width: 904px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  /* ПЕРВАЯ ПОЛКА */
+  /* линию тоже будем менять по размеру в зависимости от адаптива */
+  .Line1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 242px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transform: translateX(-320px);
+
+    position: absolute;
+    z-index: -1;
+    width: 2580px;
+    height: 242px;
+    background: #264653;
+    animation: line1 5s linear infinite;
+  }
+  .anim1 {
+    width: 100vw;
+    height: 242px;
+  }
+
+  /* картинку тоже помасштабируем в зависимости от адаптива */
+  .bunny1 {
+    width: 349px;
+    height: 211px;
+    position: absolute;
+    padding-top: 37px;
+    animation: bunny1 5s linear infinite;
+  }
+
+  /* ВТОРАЯ ПОЛКА */
+    .rsect2_1 {
+      margin-left: 775px;
+
+    }
+
+  /* ТРЕТЬЯ ПОЛКА */
+    .bunny2 {
+      width: 290px;
+      height: 370px;
+      margin-left: 127px;
+      margin-right: 98px;
+    }
+    .bunny2ears {
+      left: 38.3%;
+      position: absolute;
+      z-index: -1;
+      /* можно подумать как сделать это на ховер */
+      animation: bunny2ear 2.5s alternate infinite;
+    }
+    .B1, .B3, .B4 {
+      position: relative;
+    }
+    .B1 {
+      width: 182px;
+      height: 533px;
+    }
+    .B2 {
+      width: 143px;
+      height: 463px;
+    }
+    .B3 {
+      width: 123px;
+      height: 402px;
+    }
+    .B4 {
+      width: 143px;
+      height: 488px;
+    }
+    .B5 {
+      width: 143px;
+      height: 425px;
+    }
+    .B6 {
+      width: 88px;
+      height: 370px;
+    }
+
+    .TextB1 {
+      position: absolute;
+      left: -99px;
+      top: 359px;
+      z-index: 2;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 47px;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+      color: #5EA0BB;
+    }
+    .TextB3 {
+      position: absolute;
+      left: 269px;
+      top: 446px;
+      z-index: 2;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #FFEDC2;
+      transform: rotate(-90deg);
+    }
+    .TextB4 {
+      position: absolute;
+      left: 906px;
+      top: 382px;
+      z-index: 2;
+      font-weight: 700;
+      font-size: 29px;
+      line-height: 41px;
+      text-transform: uppercase;
+      color: #439E93;
+      transform: rotate(-90deg);
+    }
+
+  /* ШЕСТАЯ ПОЛКА */
+    .doggie3 {
+      width: 389px;
+      height: 264px;
+      position: absolute;
+      z-index: 2;
+      animation: doggie3 8s linear infinite;
+    }
+    .Line2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 109px;
+      line-height: 242px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transform: translateX(230px);
+
+
+      position: absolute;
+      z-index: 1;
+      width: 4288px;
+      height: 242px;
+      background: #2B9D8E;
+      animation: line2 8s linear infinite;
+    }
+
+
+  /* СЕДЬМАЯ ПОЛКА */
+    .lightB1 {
+      width: 162px;
+      height: 497px;
+      position: absolute;
+      left: 80px;
+      bottom: 0px;
+    }
+    .lightB2 {
+      width: 116px;
+      height: 369px;
+      position: absolute;
+      left: 283px;
+      bottom: -6px;
+    }
+    .lightB3 {
+      width: 174px;
+      height: 432px;
+      position: absolute;
+      left: 938px;
+      bottom: -9px;
+    }
+    .lightB4 {
+      width: 160px;
+      height: 480px;
+      position: absolute;
+      left: 1146px;
+      bottom: 0px;
+    }
+    .rope {
+      position: absolute;
+      top: -17%;
+    }
+    .bulb1, .bulb2, .bulb3, .bulb4, .bulb5, .bulb6, .bulb7, .bulb8, .bulb9, .bulb10 {
+      position: absolute;
+      display: block;
+      z-index: -2;
+      height: 76px;
+      width: 76px;
+      border-radius: 50%;
+      background: #676360;
+    }
+    .bulb1 {
+      top: 28%;
+      left: 2%;
+    }
+    .bulb2 {
+      top: 29%;
+      left: 20%;
+    }
+    .bulb3 {
+      top: 24%;
+      left: 32%;
+    }
+    .bulb4 {
+      top: 14%;
+      left: 41%;
+    }
+    .bulb5 {
+      top: 6%;
+      left: 51%;
+    }
+    .bulb6 {
+      top: 19%;
+      left: 61%;
+    }
+    .bulb7 {
+      top: 25%;
+      left: 72%;
+    }
+    .bulb8 {
+      top: 25%;
+      left: 84%;
+    }
+    .bulb9 {
+      top: 22%;
+      left: 94%;
+    }
+    .kitty3 {
+      bottom: 34px;
+      width: 349px;
+      height: 240px;
+      position: absolute;
+      display: block;
+      z-index: 1;
+      animation: kitty3 9s linear infinite;
+    }
+    .Line3 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 113px;
+      line-height: 242px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transform: translateX(-190px);
+
+
+      position: absolute;
+      width: 3300px;
+      height: 242px;
+      background: #264653;
+      animation: line3 9s linear infinite;
+    }
+
+
+  /* ВОСЬМАЯ ПОЛКА */
+    .bookssect8 {
+      position: absolute;
+    }
+    .bookssect82 {
+      position: absolute;
+      left: 1201px;
+    }
+
+    .confb1 {
+      width: 78px;
+      height: 393px;
+    }
+    .confb2 {
+      width: 106px;
+      height: 499px;
+    }
+    .book8last {
+      width: 87px;
+      height: 546px;
+    }
+    .book8aftlast {
+      width: 78px;
+      height: 481px;
+    }
+
+    .moveright {
+      animation: move-right 7s ease infinite;
+    }
+
+    .doggie4 {
+      width: 589px;
+      height: 399px;
+      position: absolute;
+      top: 38%;
+      display: block;
+      z-index: -2;
+      animation: doggie4 8s ease infinite;
+    }
+    .conf1, .conf2, .conf3, .conf4, .conf5, .conf6, .conf7 {
+      position: absolute;
+      z-index: -3;
+      animation: confetti1 8s ease infinite;
+      transform: scale(0.8);
+    }
+    .conf1 {
+      top: 4%;
+      left: 16%;
+    }
+    .conf2 {
+      top: 11%;
+      left: 9.3%;
+    }
+    .conf3 {
+      top: 12%;
+      left: 17%;
+    }
+    .conf4 {
+      top: 4%;
+      left: 15%;
+    }
+    .conf5 {
+      top: 11%;
+      left: 12%;
+    }
+    .conf6 {
+      top: 3%;
+      left: 38%;
+    }
+    .conf7 {
+      top: -3%;
+      left: 19%;
+    }
+
+
+  /* Анимациии */
+
+    @keyframes bunny2ear {
+      0% {top: 200px; transform: scale(0.3);}
+      100% {top: 80px; transform: scale(0.8);}
+    }
+
+
+    @keyframes doggie4 {
+      0% {left: -100%;}
+      45% {left: 28%;}
+      75% {left: 28%;}
+      100% {left: 100%;}
+    }
 }

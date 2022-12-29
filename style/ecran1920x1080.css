@@ -1,10 +1,161 @@
-@media only screen and (max-width: 1439px){
-  .letter {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 200px;
-    line-height: 351px;
-    color: #2B9D8E;
+@media only screen and (min-width: 1451px) and (max-width: 1920px){
 
-  }
+  /* ВТОРАЯ ПОЛКА */
+
+    .rsect2_1 {
+      margin-left: 1329px;
+
+    }
+
+
+  /* ТРЕТЬЯ ПОЛКА */
+    .bunny2 {
+      margin-left: 253px;
+      margin-right: 368px;
+    }
+    .TextB4 {
+      position: absolute;
+      left: 1390px;
+      top: 358px;
+      z-index: 2;
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 41px;
+      text-transform: uppercase;
+      color: #439E93;
+      transform: rotate(-90deg);
+    }
+    /* ШЕСТАЯ ПОЛКА */
+    .bookssect6 {
+      position: absolute;
+      display: inline-block;
+      left: 33%;
+      top: 3%;
+      transform: scale(0.9);
+    }
+    .doggie3 {
+      position: absolute;
+      z-index: 2;
+      animation: doggie3 8s linear infinite;
+    }
+    .Line2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 120px;
+      line-height: 276px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transform: translateX(230px);
+
+
+      position: absolute;
+      z-index: 1;
+      width: 4288px;
+      height: 276px;
+      background: #2B9D8E;
+      animation: line2 8s linear infinite;
+    }
+
+
+    /* СЕДЬМАЯ ПОЛКА */
+    .lightB1 {
+      position: absolute;
+      left: 80px;
+      bottom: 2px;
+    }
+    .lightB2 {
+      position: absolute;
+      left: 284px;
+      bottom: 0px;
+    }
+    .lightB3 {
+      position: absolute;
+      left: 1350px;
+      bottom: 0px;
+    }
+    .lightB4 {
+      position: absolute;
+      left: 1566px;
+      bottom: 0px;
+    }
+    .ropeimg {
+      width: 100vw;
+    }
+    .rope {
+      position: absolute;
+      top: -35%;
+    }
+    .bulb5 {
+      top: 3%;
+      left: 53%;
+    }
+    .bulb6 {
+      top: 18%;
+      left: 63%;
+    }
+
+    /* ВОСЬМАЯ ПОЛКА */
+    .bookssect82 {
+      position: absolute;
+      left: 1732px;
+    }
+    .doggie4 {
+      position: absolute;
+      top: 38%;
+      display: block;
+      z-index: -2;
+      animation: doggie4 8s ease infinite;
+    }
+
+    .conf1, .conf2, .conf3, .conf4, .conf5, .conf6, .conf7 {
+      position: absolute;
+      z-index: -3;
+      /* animation: confetti1 8s ease infinite; */
+    }
+    .conf1 {
+      top: 4%;
+      left: 25%;
+    }
+    .conf2 {
+      top: 11%;
+      left: 19%;
+    }
+    .conf3 {
+      top: 12%;
+      left: 25%;
+    }
+    .conf4 {
+      top: 4%;
+      left: 24%;
+    }
+    .conf5 {
+      top: 11%;
+      left: 20%;
+    }
+    .conf6 {
+      top: 3%;
+      left: 41%;
+    }
+    .conf7 {
+      top: -3%;
+      left: 27%;
+    }
+
+
+
+    /* Анимациии */
+    @keyframes doggie4 {
+      0% {left: -100%;}
+      45% {left: 31%;}
+      75% {left: 31%;}
+      100% {left: 100%;}
+    }
+
+    @keyframes confetti1 {
+      0% {opacity: 0; transform: scale(0);}
+      45% {opacity: 0; transform: scale(0);}
+      70% {opacity: 1; transform: scale(1);}
+      75% {opacity: 0;}
+      100% {opacity: 0;}
+    }
 }

@@ -1,10 +1,666 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .letter {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 200px;
-    line-height: 351px;
-    color: #2B9D8E;
 
-  }
+  /* ОБЩИЕ ПРАВИЛА ДЛЯ СЕКЦИЙ И ПОЛОК */
+    .section {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      /* Прописать хейгхт в адаптивах для секций */
+      height: 536px;
+      width: 100vw;
+    }
+
+    .sectionheading {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      height: 261px;
+      width: 100vw;
+    }
+
+    .sectionlast {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      height: 300px;
+      width: 100vw;
+    }
+
+    .polka {
+      width: 100%;
+      /* Прописать хейгт в адаптивах для полок */
+      height: 35px;
+      background: #E66F51;
+    }
+
+    .polkaheading {
+      height: 35px;
+    }
+
+    .section {
+      align-items: flex-end;
+    }
+    .section > div:nth-of-type(1) {
+      width: 100%;
+      /* Прописывать высоту секциям в зависимости от адаптива гыыы */
+      height: 501px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .anim1, .anim2, .anim3, .anim4, .anim5, .anim6, .anim7, .anim8 {
+      position: relative;
+    }
+
+  /* Хэдинг */
+     .container {
+       width: 642px;
+       height: 200px;
+       display: block;
+       margin: 0 auto;
+       margin-top: 50px;
+     }
+     .letter {
+       display: inline-block;
+       top: 17px;
+       font-weight: 700;
+       font-size: 110px;
+       line-height: 249px;
+       color: #2B9D8E;
+
+     }
+     .jump:hover {
+      animation: jump 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+     }
+
+  /* ПЕРВАЯ ПОЛКА */
+    /* линию тоже будем менять по размеру в зависимости от адаптива */
+     .Line1 {
+         text-align: center;
+         font-weight: 700;
+         font-size: 85px;
+         line-height: 217px;
+         text-transform: uppercase;
+         color: #FFFFFF;
+         transform: translateX(-220px);
+
+         position: absolute;
+         z-index: -1;
+         width: 2000px;
+         height: 217px;
+         background: #264653;
+         animation: line1 5s linear infinite;
+         /* animation-delay: 2.1s; */
+       }
+
+     /* картинку тоже помасштабируем в зависимости от адаптива */
+     .bunny1 {
+         width: 313px;
+         height: 189px;
+         position: absolute;
+         padding-top: 37px;
+         animation: bunny1 5s linear infinite;
+       }
+     .anim1 {
+         width: 100vw;
+         height: 217px;
+       }
+
+
+  /* ВТОРАЯ ПОЛКА */
+      .doggie1 {
+           width: 498px;
+           height: 356px;
+           position: absolute;
+           z-index: -1;
+           animation: doggie1 7s linear infinite;
+         }
+      .bsect2_a, .bsect2last, .bsect2_c {
+        display: none;
+
+         }
+      .bsect2_b{
+           width: 70px;
+           height: 422px;
+         }
+      .rsect2_1 {
+           margin-left: 593px;
+           width: 104px;
+           height: 452px;
+         }
+
+
+  /* ТРЕТЬЯ ПОЛКА */
+    .B1, .B6, .B5, .TextB1, .TextB4 {
+             display: none;
+           }
+    .B2 {
+      width: 109px;
+      height: 353px;
+    }
+    .B3 {
+      width: 93px;
+      height: 306px;
+    }
+    .B4 {
+      width: 109px;
+      height: 372px;
+    }
+
+    .TextB3 {
+      position: absolute;
+      left: 57px;
+      top: 308px;
+      z-index: 2;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #FFEDC2;
+      transform: rotate(-90deg);
+    }
+
+
+    .bunny2 {
+      margin-left: 77px;
+      margin-right: 146px;
+      width: 220px;
+      height: 281px;
+    }
+    .bunny2ears {
+      height: 157px;
+      width: 286px;
+      left: 33.7%;
+      position: absolute;
+      z-index: -1;
+      animation: bunny2ear 2.5s alternate infinite;
+    }
+
+
+  /* ЧЕТВЕРТАЯ ПОЛКА */
+      .anim4 {
+        display: flex;
+      }
+      /* общее правило для тилсов */
+      .tiles {
+        position: relative;
+        display: inline-block;
+        width: 33%;
+        height: 100%;
+        overflow: hidden;
+        background: blue;
+      }
+
+      .third, .sixth, .eightth {
+        background: #E9C46B;
+      }
+      .second, .fourth, .seventh {
+        background: #F3A261;
+      }
+      /* первый тилс */
+      .first {
+        display: none;
+      }
+
+      /* второй тилс */
+      .Texttiels1 {
+        top: -4%;
+        position: absolute;
+        font-weight: 800;
+        font-size: 120px;
+        line-height: 185px;
+        text-transform: uppercase;
+        color: #264653;
+        transform: rotate(9.85deg);
+
+      }
+      .Texttiels2 {
+        top: 20%;
+        position: absolute;
+        font-weight: 800;
+        font-size: 195px;
+        line-height: 300px;
+        text-transform: uppercase;
+        color: #E66F51;
+        transform: rotate(-8.52deg);
+
+      }
+      .Texttiels3 {
+        top: 70%;
+        position: absolute;
+        font-weight: 700;
+        font-size: 105px;
+        line-height: 161px;
+        text-transform: uppercase;
+        color: #264653;
+        transform: rotate(-1.47deg);
+
+      }
+
+
+      /* третий тилс */
+      .third, .sixth {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+      .tielsbook1 {
+        width: 89px;
+        height: 459px;
+      }
+      .tielsbook2 {
+        width: 95px;
+        height: 383px;
+      }
+      .tielsbook3 {
+        width: 94px;
+        height: 485px;
+      }
+      /* четвертый тилс */
+      .doggietiels4 {
+        position: absolute;
+        top: 18%;
+        animation: doggietiel4 5s ease infinite;
+      }
+      .doggie4til {
+        width: 615px;
+        height: 416px;
+      }
+
+
+
+  /* ПЯТАЯ ПОЛКА */
+     /* пятый тилс */
+     .fifth {
+       display: none;
+     }
+     /* шестой тилс */
+     .i6first {
+       width: 131px;
+       height: 378px;
+     }
+     .i6second {
+       width: 154px;
+       height: 485px;
+     }
+     /* седьмой тилс */
+     .tilebunny7 {
+       transform: scale(0.9);
+
+     }
+     .bunnytiels7 {
+       position: absolute;
+     }
+     /* восьмой тилс */
+     .Texttiels4 {
+       top: -14%;
+       position: absolute;
+       font-weight: 700;
+       font-size: 174px;
+       line-height: 267px;
+       text-transform: uppercase;
+       color: #164741;
+       transform: rotate(-7.52deg);
+     }
+     .Texttiels5 {
+       position: absolute;
+       top: 23%;
+       left: 20%;
+       font-weight: 700;
+       font-size: 90px;
+       line-height: 139px;
+       text-transform: uppercase;
+       color: #2B9D8E;
+       transform: rotate(9.85deg);
+     }
+     .Texttiels6 {
+       position: absolute;
+       top: 28%;
+       font-weight: 700;
+       font-size: 235px;
+       line-height: 361px;
+       text-transform: uppercase;
+       color: #599193;
+       transform: rotate(6.5deg);
+     }
+     .Texttiels7 {
+       position: absolute;
+       top: 79%;
+       left: 10%;
+       font-weight: 700;
+       font-size: 88px;
+       line-height: 135px;
+       text-transform: uppercase;
+       color: #2B9D8E;
+       transform: rotate(-1.47deg);
+     }
+
+     /* ШЕСТАЯ ПОЛКА */
+     .bookssect6 {
+       position: absolute;
+       display: inline-block;
+       left: 24%;
+       transform: scale(0.8);
+     }
+     .aftrFbook1 {
+       width: 183px;
+       height: 544px;
+     }
+     .aftrFbook2 {
+       width: 144px;
+       height: 462px;
+     }
+     .aftrFbook3 {
+       width: 123px;
+       height: 399px;
+     }
+
+
+     .doggie3 {
+       width: 307px;
+       height: 208px;
+       position: absolute;
+       z-index: 2;
+       animation: doggie3 8s linear infinite;
+     }
+     .Line2 {
+       text-align: center;
+       font-weight: 700;
+       font-size: 100px;
+       line-height: 217px;
+       text-transform: uppercase;
+       color: #FFFFFF;
+       transform: translateX(230px);
+
+
+       position: absolute;
+       z-index: 1;
+       width: 3297px;
+       height: 217px;
+       background: #2B9D8E;
+       animation: line2 8s linear infinite;
+     }
+
+
+
+
+  /* СЕДЬМАЯ ПОЛКА */
+     .bookssect7 {
+       position: absolute;
+       z-index: 2;
+       transform: scale(0.8);
+     }
+     .lightB1 {
+       width: 145px;
+       height: 446px;
+       position: absolute;
+       left: 80px;
+       bottom: 2px;
+     }
+     .lightB2 {
+       width: 104px;
+       height: 324px;
+       position: absolute;
+       left: 242px;
+       bottom: 0px;
+     }
+     .lightB3 {
+       display: none;
+     }
+     .lightB4 {
+       width: 143px;
+       height: 430px;
+       position: absolute;
+       left: 749px;
+       bottom: 0px;
+     }
+
+     .rope {
+       transform: scale(0.6);
+       position: absolute;
+       top: -27%;
+       left: -42%;
+     }
+     .bulb1, .bulb2, .bulb3, .bulb4, .bulb5, .bulb6, .bulb7, .bulb8, .bulb9, .bulb10 {
+       position: absolute;
+       display: block;
+       z-index: -2;
+       height: 54px;
+       width: 54px;
+       border-radius: 50%;
+       background: #676360;
+     }
+     .bulb1 {
+       top: 26%;
+       left: 2%;
+     }
+     .bulb2 {
+       top: 26%;
+       left: 20%;
+     }
+     .bulb3 {
+       top: 21%;
+       left: 32%;
+     }
+     .bulb4 {
+       top: 14%;
+       left: 41%;
+     }
+     .bulb5 {
+       top: 6%;
+       left: 51%;
+     }
+     .bulb6 {
+       top: 16%;
+       left: 61%;
+     }
+     .bulb7 {
+       top: 21%;
+       left: 72%;
+     }
+     .bulb8 {
+       top: 23%;
+       left: 84%;
+     }
+     .bulb9 {
+       top: 22%;
+       left: 94%;
+     }
+
+     .kitty3 {
+       position: absolute;
+       display: block;
+       z-index: 1;
+       animation: kitty3 9s linear infinite;
+     }
+     .kitty3scale {
+       width: 312px;
+       height: 215px;
+     }
+     .Line3 {
+       text-align: center;
+       font-weight: 700;
+       font-size: 110px;
+       line-height: 217px;
+       text-transform: uppercase;
+       color: #FFFFFF;
+       transform: translateX(-190px);
+
+
+       position: absolute;
+       width: 3361px;
+       height: 217px;
+       background: #264653;
+       animation: line3 9s linear infinite;
+     }
+
+
+
+
+  /* ВОСЬМАЯ ПОЛКА */
+    .bookssect8 {
+      display: none;
+    }
+    .bookssect82 {
+      display: none;
+    }
+
+    .confb1, .book8aftlast {
+      display: none;
+
+    }
+    .confb2 {
+      width: 95px;
+      height: 447px;
+    }
+
+
+
+    .doggie4 {
+      position: absolute;
+      top: 37%;
+      display: block;
+      z-index: -2;
+      animation: doggie4 8s ease infinite;
+    }
+    .doggie4scale {
+      width: 471px;
+      height: 320px;
+    }
+
+
+    .conf1, .conf2, .conf3, .conf4, .conf5, .conf6, .conf7 {
+      position: absolute;
+      z-index: -3;
+      animation: confetti1 8s ease infinite;
+    }
+    .conf1 {
+      top: 4%;
+      left: 9%;
+    }
+    .conf2 {
+      top: 11%;
+      left: 1%;
+    }
+    .conf3 {
+      top: 12%;
+      left: 12%;
+    }
+    .conf4 {
+      top: 4%;
+      left: 9%;
+    }
+    .conf5 {
+      top: 11%;
+      left: 6%;
+    }
+    .conf6 {
+      top: 3%;
+      left: 33%;
+    }
+    .conf7 {
+      top: -3%;
+      left: 15%;
+    }
+
+    .confscale1 {
+      width: 591px;
+      height: 361px;
+    }
+    .confscale2 {
+      width: 744px;
+      height: 351px;
+    }
+    .confscale3 {
+      width: 634px;
+      height: 365px;
+    }
+    .confscale4 {
+      width: 662px;
+      height: 336px;
+    }
+    .confscale5 {
+      width: 695px;
+      height: 199px;
+    }
+    .confscale6 {
+      width: 472px;
+      height: 197px;
+    }
+    .confscale7 {
+      width: 522px;
+      height: 219px;
+    }
+
+
+ /* ФИНАЛЬНАЯ СЕКЦИЯ */
+    .footer {
+      position: relative;
+      display: flex;
+      height: 91px;
+      width: 100vw;
+      background: #E66F51;
+    }
+    .name {
+      position: absolute;
+      top: 28%;
+      left: 3%;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 29px;
+      color: #FFFFFF;
+    }
+    .group {
+      position: absolute;
+      top: 28%;
+      left: 56%;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 29px;
+      color: #FFFFFF;
+    }
+    .logotip {
+      position: absolute;
+      top: 24%;
+      left: 79%;
+    }
+    .logotipscale {
+      width: 132px;
+      height: 48px;
+    }
+
+
+    .Textlast {
+      position: absolute;
+      font-weight: 700;
+      font-size: 150px;
+      line-height: 200px;
+      text-transform: uppercase;
+      color: #2B9D8E;
+    }
+    .Textlast span {
+      display:inline-block;
+      width: 2000px;
+      text-indent:0;
+      animation: txtmovepls 3s linear infinite}
+    .Textlast span:hover{
+      animation-play-state: paused
+    }
+    .animLAST {
+      height: 220px;
+      width: 100vw;
+    }
+
+ /* Анимации */
+   @keyframes bunny2ear {
+      0% {top: 180px; transform: scale(0.3);}
+      100% {top: 75px; transform: scale(1.3);}
+    }
+
+    @keyframes doggie4 {
+      0% {left: -100%;}
+      45% {left: 20%;}
+      75% {left: 20%;}
+      100% {left: 100%;}
+    }
 }
